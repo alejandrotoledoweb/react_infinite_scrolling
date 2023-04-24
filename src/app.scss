@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding-left: 2em;
+  }
+
+  &__pokemons {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__icon-container {
+    display: flex;
+  }
+}

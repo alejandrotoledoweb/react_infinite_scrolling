@@ -1,0 +1,18 @@
+.pokecard {
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+
+  &__image {
+    padding-top: 30px;
+    width: 70%;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 30px 0 30px;
+  }
+}
