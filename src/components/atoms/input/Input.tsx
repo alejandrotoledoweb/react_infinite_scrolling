@@ -34,7 +34,15 @@ export const Input: FC<InputProps> = ({
 
   return (
     <section className="input--container">
-      <h1 className="input--title">List of pokemons - Infinite Scrolling</h1>
+      <h1 className="input--title">
+        List of{" "}
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/800px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="pokemon_title"
+          height={40}
+        />
+        - Infinite Scrolling
+      </h1>
       <h4 className="input--subtitle">Total of pokemon: {numberPokemon}</h4>
       <input
         type={type}
