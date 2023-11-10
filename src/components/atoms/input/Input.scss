@@ -14,16 +14,16 @@
     color: black;
     font-size: 28px;
     border-bottom: 1px solid black;
-    text-shadow: 8px 8px 8px white, 0.1rem 0.1rem white;
+    // text-shadow: 8px 8px 8px white, 0.1rem 0.1rem white;
 
     @media (min-width: 600px) {
       font-size: 34px;
     }
   }
 
-  &--subtitle{
-    text-shadow: 8px 8px 8px black, 0.1rem 0.1rem black;
-  }
+  // &--subtitle{
+    // text-shadow: 8px 8px 8px black, 0.1rem 0.1rem black;
+  // }
 
   &--child {
     height: 25px;

@@ -12,7 +12,7 @@ class Store {
   }
 
   getImage = (pokeNumber: string) => {
-    const onlyNumbers = /(\d{1,3})/g
+    const onlyNumbers = /(\d{1,4})/g
     const justNumber = pokeNumber.match(onlyNumbers)
     const number = justNumber![1]
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${number}.svg`;
