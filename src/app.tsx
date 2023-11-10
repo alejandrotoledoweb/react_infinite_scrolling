@@ -40,7 +40,7 @@ const App: React.FC = observer(() => {
         {store.filteredPokemons?.map(poke => (
           <Card name={poke.name} url={poke.url} key={poke.url + Math.random()} />
         ))}
-        {store.filteredPokemons?.length === 0 && <p>No existe ningun pokemon con ese nombre</p>}
+        {store.filteredPokemons?.length === 0 && <p className="app__pokemons--error">There is no pokemon with that name</p>}
       </section>
     </main>
   );

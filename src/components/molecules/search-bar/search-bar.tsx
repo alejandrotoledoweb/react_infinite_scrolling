@@ -9,7 +9,7 @@ interface SearchProps {
 
 export const SearchBar: React.FC<SearchProps> = ({ handleChange, counter }) => {
   return (
-    <div className="searchBar-container">
+    <div className="searchbar-container">
       <Input
         placeholder="buscar pokemon"
         inputId="buscar"

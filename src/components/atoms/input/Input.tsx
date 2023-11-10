@@ -34,7 +34,8 @@ export const Input: FC<InputProps> = ({
 
   return (
     <section className="input--container">
-      <h4>total of pokemon: {numberPokemon}</h4>
+      <h1 className="input--title">List of pokemons - Infinite Scrolling</h1>
+      <h4 className="input--subtitle">Total of pokemon: {numberPokemon}</h4>
       <input
         type={type}
         placeholder={placeholder}

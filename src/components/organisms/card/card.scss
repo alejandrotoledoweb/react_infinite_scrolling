@@ -7,9 +7,21 @@
   align-items: center;
   color: rgb(0, 0, 0);
   background-color: aliceblue;
+  border-radius: 5%;
 
+  &:hover {
+    scale: 1.15;
+    border: 1px solid gray;
+    z-index: 50;
+    transition: 200ms;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
   &__image {
-    padding-top: 30px;
+    padding: 20px 0;
     width: 70%;
     height: 200px;
     object-fit: contain;
