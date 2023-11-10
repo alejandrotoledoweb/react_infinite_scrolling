@@ -36,12 +36,24 @@ const App: React.FC = observer(() => {
         <SearchBar handleChange={handleChange} counter={store.counter} />
       </section>
 
-      <section className="app__pokemons">
-        {store.filteredPokemons?.map(poke => (
-          <Card name={poke.name} url={poke.url} key={poke.url + Math.random()} />
-        ))}
-        {store.filteredPokemons?.length === 0 && <p className="app__pokemons--error">There is no pokemon with that name</p>}
-      </section>
+      {store.allPokemons.length === 0 ? (
+        <p className="app__pokemons--error">Loading...</p>
+      ) : (
+        <section className="app__pokemons">
+          {store.filteredPokemons?.map((poke) => (
+            <Card
+              name={poke.name}
+              url={poke.url}
+              key={poke.url + Math.random()}
+            />
+          ))}
+          {store.filteredPokemons?.length === 0 && (
+            <p className="app__pokemons--error">
+              There is no pokemon with that name
+            </p>
+          )}
+        </section>
+      )}
     </main>
   );
 });
