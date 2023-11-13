@@ -15,11 +15,10 @@ const App: React.FC = observer(() => {
   };
 
   const handleOnScroll = useCallback(() => {
-    console.log(
-      window.innerHeight + window.scrollY,
+    if (
+      window.innerHeight + window.scrollY + 0.5 >=
       document.body.offsetHeight
-    );
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    ) {
       store.getMorePokemons(store.page + 50);
       console.log("fetching");
     }
